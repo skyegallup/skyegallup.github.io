@@ -1,0 +1,106 @@
+/* Manrope font declaration */
+
+@font-face {
+    font-family: 'Manrope';
+    src: url('/assets/fonts/Manrope.ttf');
+}
+
+
+/* General styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* Document-level styles */
+    background-color: #1A1A1A;
+    color: #FFFFFF;
+    font-family: 'Manrope', 'Helvetica', sans-serif;
+    font-size: 18px;
+    line-height: 1.4;
+
+    /* Layout styles */
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    min-height: 100vh;
+    row-gap: 3rem;
+}
+
+nav, main, footer {
+    max-width: 650px;
+    width: 100%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    row-gap: 1.5rem;
+}
+
+footer {
+    font-size: 0.875rem;
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.2;
+}
+
+ul, ol {
+    padding-left: 2rem;
+}
+
+a {
+    color: #FC78D2;
+}
+a:hover, a:active, a:visited {
+    color: #FB23B6;
+}
+
+img {
+    border-radius: 0.5rem;
+    height: auto;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+figure {
+    margin: 0 auto;
+}
+figure figcaption {
+    font-size: 0.875rem;
+    text-align: center;
+}
+
+/* Navbar styles */
+
+nav {
+    align-items: baseline;
+    gap: 0.5rem 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+nav .title {
+    font-size: 1.5rem;  /* H2 size */
+    font-weight: bold;
+    margin-right: auto;
+}
+
+nav .links {
+    column-gap: 1rem;
+    display: flex;
+    flex-direction: row;
+}
+
+ul[role="navigation"] li.active {
+    color: #FB23B6;
+}
