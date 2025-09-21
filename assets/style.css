@@ -20,7 +20,7 @@ body {
     color: #FFFFFF;
     font-family: 'Manrope', 'Helvetica', sans-serif;
     font-size: 18px;
-    line-height: 1.4;
+    line-height: 1.5;
 
     /* Layout styles */
     align-items: center;
@@ -36,11 +36,15 @@ nav, main, footer {
     width: 100%;
 }
 
-main {
+main, section {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
     row-gap: 1.5rem;
+}
+
+section {
+    margin-bottom: 1.5rem;
 }
 
 footer {
@@ -104,3 +108,13 @@ nav .links {
 ul[role="navigation"] li.active {
     color: #FB23B6;
 }
+
+/* Grouping styles */
+
+.content-group {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    row-gap: 0.75rem;
+}
+
